@@ -1,0 +1,132 @@
+@import './../../theme/variables.scss';
+.page--container{
+  padding-top: 84px;
+  padding-bottom: 20px;
+  .analytics__page--header{
+    background: #f7f7f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 84px;
+    z-index: 1043;
+    padding:0 115px;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
+    -webkit-align-items:center;
+    align-items:center;
+    -webkit-align-content:center;
+    align-content:center;
+
+    .analytics__page--header-title{
+      font-size: 23px;
+      font-weight: 600;
+      color: #73777A;
+      span{
+        font-size: 12px;
+        font-weight: 400;
+        color: #73777A;
+        display: block;
+      }
+    }
+    .custom-select{
+      display: inline-block;
+      max-width: 140px;
+      margin-right: auto;
+      margin-left: 46px;
+      background-color: transparent;
+      border: 0;
+      font-size: 15px;
+      color: #73777A;
+      text-align: left;
+    }
+    .analytics__page--close{
+      margin-left: 115px;
+    }
+  }
+  .event__wrapper{
+    padding: 15px 0 0;
+    .event__container{
+       .event__container--title{
+          font-family: Poppins;
+          font-size: 31px;
+          color: #73777A;
+          font-weight:500;
+       }
+       .event__container--description{
+          font-family: Poppins;
+          font-size: 16px;
+          color: #73777A;
+       }
+    }
+    .event__btn--wrapper{
+      margin: 22px 0 0;
+      .btn-event{
+        border: 2px solid #74B928;
+        font-family: Poppins;
+        font-size: 17px;
+        font-weight: 400;
+        color: #74B928;
+        padding: 13px 40px;
+        border-radius: 4px;
+      }
+    }
+  }
+  .event__table--content{
+    thead>tr>th{
+      border-bottom: 0px solid #ddd;
+      font-size: 13px;
+      font-weight: 500;
+      color: #9B9B9B;
+      letter-spacing: 0;
+      line-height: 24px;
+      text-align: center;
+        &:first-child{
+          text-align: left;
+        }
+    }
+    tbody>tr>td{
+      vertical-align: middle;
+      padding: 14px 10px;
+      border-top: 0px solid #ddd;
+      text-align: center;
+        &:first-child{
+          text-align: left;
+        }
+    }
+    .title{
+      font-size: 13px;
+      color: #333333;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    .address{
+      font-size: 11px;
+      color: #74B928;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    .btn__delete,
+    .btn__edit{
+        min-width: 118px;
+        border-width: 1px;
+        border-style: solid;
+        background: transparent;
+    }
+    .btn__delete{
+      border-color: #D0021B;
+      color: #D0021B;
+      margin-right: 18px;
+    }
+    .btn__edit{
+      border-color: #9B9B9B;
+      color: #9B9B9B;
+    }
+
+
+  }
+}
